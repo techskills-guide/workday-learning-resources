@@ -13,6 +13,8 @@ https://techskills-guide.github.io/workday-learning-resources/
 - [Workday Financial Management basics](blogs/workday-finance-basics.html)
 - [Workday integrations: EIB, Studio and connectors](blogs/workday-integrations-basics.html)
 - [Workday Learning LMS basics](blogs/workday-learning-lms-basics.html)
+- [Workday Adaptive Planning basics](blogs/workday-adaptive-planning-basics.html)
+- [Workday GO overview](blogs/workday-go-basics.html)
 
 ## Publish with GitHub Pages
 
