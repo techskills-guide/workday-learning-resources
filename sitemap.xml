@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/about.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-hcm-basics.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-finance-basics.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-integrations-basics.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-learning-lms-basics.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-adaptive-planning-basics.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/workday-go-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-hcm-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-integrations-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-learning-lms-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-adaptive-planning-basics.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/workday-go-basics.html</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-certification-training.html</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-hcm-technical-training.html</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-hcm-functional-training.html</loc></url>
@@ -25,5 +25,5 @@
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-training-chennai.html</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-training-chandigarh.html</loc></url>
   <url><loc>https://techskills-guide.github.io/workday-learning-resources/course-workday-training-california.html</loc></url>
-  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blogs.html</loc></url>
+  <url><loc>https://techskills-guide.github.io/workday-learning-resources/blog/</loc></url>
 </urlset>
