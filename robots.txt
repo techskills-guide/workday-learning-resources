@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techskills-guide.github.io/workday-learning-resources/sitemap.xml
