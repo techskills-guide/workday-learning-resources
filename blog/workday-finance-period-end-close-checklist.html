@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workday Finance Period-End Close Checklist: Managing Dependencies, Open Items and Sign-Off Evidence | Workday Learning Hub</title>
+<meta name="description" content="Explore a practical period-end close checklist for finance learners: close dependencies, open items, reconciliations, review evidence and sign-off tracking.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-period-end-close-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Workday Finance Period-End Close Checklist: Managing Dependencies, Open Items and Sign-Off Evidence">
+<meta property="og:description" content="A practical close-readiness framework for finance learners, covering ownership, dependencies, exceptions and audit-friendly evidence.">
+<meta property="og:url" content="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-period-end-close-checklist.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Workday Finance Period-End Close Checklist">
+<meta name="twitter:description" content="Learn to organize period-end close tasks, dependencies, open items and review evidence with a repeatable checklist.">
+<style>
+:root{--ink:#182b49;--muted:#5e6d82;--blue:#2859a8;--pale:#f3f6fb;--line:#e0e7f0}*{box-sizing:border-box}body{margin:0;color:var(--ink);font:16px/1.75 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{width:min(900px,92%);margin:auto}.header{border-bottom:1px solid var(--line);padding:18px 0}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.brand small{display:block;font-weight:500;color:var(--muted)}main{padding:35px 0 60px}.post h1{font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.2;margin:8px 0 12px}.tag{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.post-intro{font-size:1.08rem;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:22px}.post-body h2{font-size:1.5rem;margin-top:30px}.post-body h3{font-size:1.15rem;margin-top:24px}.post-body p,.post-body li{color:#34445b}.post-body li{margin:6px 0}.note,.article-cta{padding:16px 18px;background:var(--pale);border-radius:8px;margin:22px 0}.related-links{display:flex;gap:12px;flex-wrap:wrap}.footer{padding:25px 0;background:#172844;color:#e8eef8}.footer small{color:#c3cee0}table{width:100%;border-collapse:collapse;margin:20px 0}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:10px}th{background:var(--pale)}@media(max-width:600px){table{font-size:.9rem}th,td{padding:7px}}
+</style>
+</head>
+<body id="top">
+<header class="header"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap"><a class="brand" href="../index.html">Workday Learning Hub<small>Learn · Explore · Grow</small></a><nav aria-label="Main navigation" style="display:flex;gap:16px;flex-wrap:wrap"><a href="index.html">All Blogs</a><a href="../index.html#courses">Workday courses</a><a href="../about.html">About</a></nav></div></header>
+<main class="wrap"><article class="post">
+<p class="tag">Finance Operations · Period-End Readiness</p>
+<h1>Workday Finance Period-End Close Checklist: Managing Dependencies, Open Items and Sign-Off Evidence</h1>
+<p class="post-intro">A smooth period-end close is not just about running reports. It depends on clear task ownership, upstream dependencies, well-documented exceptions and evidence that reviewers can understand later.</p>
+<div class="post-body">
+<p>Finance teams often work to a close calendar with multiple activities happening in sequence or in parallel. Transactions may need to be entered, reviewed, posted, reconciled and summarized before a period can be considered ready for sign-off. If one activity is incomplete, downstream reviewers may see unexplained differences or have to repeat checks.</p>
+<p>This guide presents a general close-readiness method for Workday Finance learners. It focuses on organizing the work and recording evidence rather than prescribing tenant-specific clicks. Workflows, available reports, task names and accounting policies vary by organization. Treat the examples as educational, use fictional figures, and confirm actual procedures with your authorized finance team and current documentation.</p>
+
+<h2>1. Understand the close as a dependency map</h2>
+<p>A close checklist is most useful when it shows how tasks depend on one another. For example, a reconciliation may depend on transactions being recorded and relevant journals being available. A reviewer may then need the reconciliation result and supporting explanation before completing a review step.</p>
+<p>Instead of keeping only a list of activities, record the predecessor, owner and evidence for each task. A simplified dependency chain might look like this:</p>
+<ol>
+<li>Confirm the period, scope and close calendar.</li>
+<li>Review whether expected transaction populations are complete.</li>
+<li>Complete required accounting and posting activities according to policy.</li>
+<li>Reconcile selected balances and investigate material differences.</li>
+<li>Review unresolved items, adjustments and supporting evidence.</li>
+<li>Obtain required approvals or sign-offs and record completion.</li>
+</ol>
+<p>This is a conceptual sequence, not a universal Workday workflow. Some organizations perform tasks in parallel, use different control points or apply additional steps based on their accounting policies.</p>
+
+<h2>2. Create a close tracker people can actually use</h2>
+<p>A tracker should make it easy to answer four questions: What needs to happen? Who owns it? What is blocking it? What evidence shows that it is complete? Avoid vague statuses such as “in progress” without a next action or expected update.</p>
+<table><thead><tr><th>Tracker field</th><th>Purpose</th><th>Example using fictional data</th></tr></thead><tbody>
+<tr><td>Task ID and activity</td><td>Identifies a close requirement clearly</td><td>CL-04 — Review expense accrual support</td></tr>
+<tr><td>Period and scope</td><td>Prevents confusion between periods or entities</td><td>October close, sample business unit</td></tr>
+<tr><td>Owner and reviewer</td><td>Clarifies responsibility and independent review</td><td>Preparer: Analyst A; reviewer: Finance Lead B</td></tr>
+<tr><td>Dependency</td><td>Shows what must be completed first</td><td>Relevant transactions recorded and source schedule received</td></tr>
+<tr><td>Status and next action</td><td>Explains whether the task is ready, blocked or under review</td><td>Blocked — waiting for approved source schedule</td></tr>
+<tr><td>Evidence reference</td><td>Points to the approved supporting file or record</td><td>Restricted workspace reference, not a pasted sensitive file</td></tr>
+<tr><td>Completion timestamp</td><td>Shows when the task was completed or reviewed</td><td>Recorded after reviewer confirmation</td></tr>
+</tbody></table>
+<p>Use the organization's approved system for storing supporting files. The tracker should reference evidence safely rather than copying bank details, employee data or other confidential information into an open spreadsheet.</p>
+
+<h2>3. Separate task completion from review completion</h2>
+<p>A preparer may finish an activity while the reviewer still needs to examine it. Marking both as complete too early can make the close appear healthier than it is. Define separate states for preparation, review and final sign-off where the organization's process requires them.</p>
+<p>For each task, write down what “complete” means. For example, completing a reconciliation might require the comparison to be performed, differences to be categorized, material items to be explained and a reviewer to approve the result. A task should not be marked complete simply because a report was opened or a file was uploaded.</p>
+<ul>
+<li><strong>Prepared:</strong> the assigned work and supporting evidence are ready for review.</li>
+<li><strong>Under review:</strong> a reviewer is checking the result or has asked a question.</li>
+<li><strong>Blocked:</strong> a prerequisite or decision prevents progress.</li>
+<li><strong>Returned for correction:</strong> a specific issue needs to be resolved and retested.</li>
+<li><strong>Signed off:</strong> the required reviewer has recorded completion under the approved process.</li>
+</ul>
+<p>These labels are examples for a learning tracker, not prescribed Workday status names.</p>
+
+<h2>4. Handle open items with an exception log</h2>
+<p>Open items are normal in a complex close; the risk is losing track of their ownership, materiality or resolution plan. A useful exception log captures the issue, its potential effect, the evidence checked, the next action and the person responsible for following it through.</p>
+<table><thead><tr><th>Exception</th><th>Questions to investigate</th><th>Useful next action</th></tr></thead><tbody>
+<tr><td>Expected transaction not found</td><td>Is the population complete? Is the period and scope correct?</td><td>Compare the approved source listing and record the missing reference.</td></tr>
+<tr><td>Reconciliation difference</td><td>Are both sides using the same period, currency, scope and definition?</td><td>Break the difference into traceable components before proposing an adjustment.</td></tr>
+<tr><td>Supporting schedule late</td><td>Who owns the source and when was it requested?</td><td>Record the dependency, owner and escalation date.</td></tr>
+<tr><td>Adjustment awaiting review</td><td>Is the rationale documented and is required approval pending?</td><td>Keep the item open until the approved review step is complete.</td></tr>
+<tr><td>Report totals differ</td><td>Are prompts, filters, dates and populations comparable?</td><td>Re-run a controlled comparison and preserve the parameters used.</td></tr>
+</tbody></table>
+<p>Do not resolve an exception by forcing a number to match or changing data without authorization. Identify the cause, follow accounting policy and use the organization's approved adjustment and approval process.</p>
+
+<h2>5. Reconcile with a repeatable method</h2>
+<p>Reconciliation is easier to review when the approach is consistent. For a practice exercise, use fictional amounts and follow these steps:</p>
+<ol>
+<li><strong>Define the comparison:</strong> identify the two sources, account or category, period, currency and scope.</li>
+<li><strong>Confirm completeness:</strong> check that the expected populations and relevant dates are included.</li>
+<li><strong>Calculate the difference:</strong> use a consistent sign convention and show the calculation clearly.</li>
+<li><strong>Classify the items:</strong> separate timing differences, missing entries, mapping questions and unexplained variances.</li>
+<li><strong>Attach safe evidence:</strong> reference the relevant schedules or approved records.</li>
+<li><strong>Explain the conclusion:</strong> state why the difference exists, what remains open and who owns the next action.</li>
+</ol>
+<p>For example, suppose a fictional clearing account has a book balance of 12,450 units and an approved supporting schedule totals 12,100 units. The difference is 350 units. That calculation is only the starting point: the reviewer still needs a documented explanation of the 350-unit difference, the relevant evidence and the approved treatment. The numbers do not, by themselves, establish an error or justify an adjustment.</p>
+
+<h2>6. Watch period cut-off and timing</h2>
+<p>Cut-off questions arise when an event occurs near the end of a reporting period. A transaction's business date, accounting date, posting status and reporting parameters may not be identical. Before concluding that an item is missing or belongs in the wrong period, establish which date and accounting rule the requirement uses.</p>
+<ul>
+<li>Confirm the close period and the date logic specified by policy.</li>
+<li>Check whether the relevant transaction is complete and has reached the required accounting state.</li>
+<li>Compare the same population and scope across the records being reviewed.</li>
+<li>Document timing differences and route policy questions to the responsible finance reviewer.</li>
+</ul>
+<p>Do not assume every late-arriving item should be backdated or that every difference should be adjusted immediately. The correct treatment depends on the organization's accounting policies, approvals and applicable requirements.</p>
+
+<h2>7. Make close evidence review-ready</h2>
+<p>Evidence is useful when someone who did not prepare the work can understand what was checked and why the conclusion is reasonable. A strong evidence note typically records the task reference, period, source or report used, parameters, key observation, explanation of exceptions, preparer and reviewer.</p>
+<p>Use a simple note structure:</p>
+<div class="note"><strong>Close evidence note</strong><br>Task and period: [reference]<br>Purpose: [what was checked]<br>Source and scope: [approved source and parameters]<br>Result: [observed result and comparison]<br>Open items: [issue, owner and next action]<br>Conclusion: [reasoned outcome]<br>Review: [reviewer and date, according to policy]</div>
+<p>Keep notes factual. Separate what you observed from what you inferred, and avoid statements such as “all correct” if only a subset was checked. Follow retention, access and confidentiality rules for supporting evidence.</p>
+
+<h2>8. Practise with a fictional close scenario</h2>
+<p>Imagine a fictional organization is preparing an October close. A reconciliation is ready, but the supporting schedule for one category has not arrived. Another task is prepared but awaiting review, and a small balance difference remains unexplained.</p>
+<p>A good learner does not mark every item complete to make the dashboard look green. Instead, the learner records the missing schedule as a dependency, identifies its owner and follow-up date, keeps the review task in the correct state, and opens an exception for the unexplained difference. The learner also checks whether the difference is material under the scenario's stated rules and escalates it according to the exercise instructions.</p>
+<p>The outcome is a clear close position: completed tasks are supported by evidence, open items have owners and next actions, and the remaining risk is visible to the reviewer. That is more useful than a status summary with no explanation.</p>
+
+<h2>9. Common period-end close mistakes</h2>
+<ul>
+<li><strong>Using one generic status:</strong> preparation, review and sign-off may be different control steps.</li>
+<li><strong>Ignoring dependencies:</strong> downstream tasks remain blocked when upstream data or decisions are missing.</li>
+<li><strong>Closing an exception without evidence:</strong> a status change does not explain why the issue is resolved.</li>
+<li><strong>Comparing different scopes:</strong> different periods, entities, filters or currencies can create misleading differences.</li>
+<li><strong>Making unsupported adjustments:</strong> all changes must follow the required accounting and approval controls.</li>
+<li><strong>Leaving ownership unclear:</strong> every open item needs a responsible owner and a defined next action.</li>
+</ul>
+
+<h2>10. How finance learners can build this skill</h2>
+<p>Start by creating a fictional close calendar with five to eight tasks. Add dependencies, owners, review steps and evidence references. Then introduce two controlled exceptions, such as a late supporting schedule and a reconciliation difference. Practise explaining the close status in a short handover note: what is complete, what remains open, why it matters and what happens next.</p>
+<p>When evaluating a <a href="https://www.techpratham.com/courses/workday-finance-training-certification-online" target="_blank" rel="noopener noreferrer">Workday Finance Training</a> option, look for learning that connects finance concepts with transaction lifecycles, reconciliation logic, period awareness, report interpretation and disciplined documentation. Review the current syllabus, delivery format, practical arrangements and support directly with the provider. A course completion certificate should not automatically be treated as an official Workday credential.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>What is a period-end close checklist?</h3>
+<p>It is a structured list of close activities, dependencies, owners, completion criteria and evidence used to coordinate work and review the status of the period.</p>
+<h3>Is a reconciliation the same as sign-off?</h3>
+<p>No. A reconciliation is a comparison and investigation activity. Sign-off is a separate confirmation that the required review or control step has been completed.</p>
+<h3>Should every open item prevent close completion?</h3>
+<p>That depends on the organization's policy, materiality thresholds and close controls. Learners should record open items clearly and follow the authorized decision process rather than deciding independently.</p>
+<h3>Why can two finance reports show different amounts?</h3>
+<p>They may use different dates, filters, populations, currencies, grouping or definitions. Compare the report scope and parameters before deciding that one result is wrong.</p>
+<h3>Can I practise this checklist without access to a live Workday tenant?</h3>
+<p>Yes. A fictional close tracker and sample reconciliation can help practise dependencies, exception handling and evidence notes. They do not replace hands-on access or organization-specific procedures.</p>
+
+<div class="article-cta"><h2>Continue your Workday Finance learning</h2><p>Explore related guides on finance workflows, reporting validation and practical learning plans.</p><div class="related-links"><a href="workday-finance-training-practical-roadmap.html">Finance learning roadmap →</a><a href="workday-financial-reporting-errors-guide.html">Financial reporting errors guide →</a><a href="workday-supplier-invoice-approval-troubleshooting.html">Supplier invoice troubleshooting →</a></div></div>
+<p><strong>Editorial note:</strong> This independent article is for general education and is not official Workday documentation. Workday is a trademark of its respective owner; this resource is not affiliated with or endorsed by Workday. Terminology, reports and workflows vary by organization and implementation. Confirm system-specific procedures with current documentation and your authorized finance team.</p>
+</div></article>
+<p><a href="#top">↑ Back to top</a></p><p><a href="../index.html">← Back to all Workday guides</a></p></main>
+<footer class="footer"><div class="wrap"><strong>Workday Learning Hub</strong><p><small>Independent educational content. Workday is a trademark of its respective owner. This website is not affiliated with or endorsed by Workday.</small></p></div></footer>
+</body></html>
