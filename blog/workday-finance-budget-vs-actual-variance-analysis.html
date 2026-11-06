@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workday Finance Budget vs. Actual Analysis: Variance Review Guide</title>
+<meta name="description" content="Learn how to analyze budget vs. actual variances in Workday Finance, investigate overspending and understand financial analysis through a practical example.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-budget-vs-actual-variance-analysis.html">
+<meta property="og:title" content="Workday Finance Budget vs. Actual Analysis: Variance Review Guide">
+<meta property="og:description" content="A practical learning guide to budget variance analysis, overspending investigation and financial review.">
+<meta property="og:type" content="article">
+<style>
+:root{--ink:#182b49;--muted:#5e6d82;--blue:#2859a8;--line:#e0e7f0;--pale:#f3f6fb}*{box-sizing:border-box}body{margin:0;color:var(--ink);font:16px/1.75 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff}a{color:var(--blue)}.wrap{width:min(850px,92%);margin:auto}.header{padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.hero{padding:48px 0 30px;background:linear-gradient(130deg,#f2f6fd,#fff);border-bottom:1px solid var(--line)}.tag{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.18;margin:10px 0 18px;letter-spacing:-.03em}.intro{font-size:1.1rem;color:var(--muted)}main{padding:28px 0 54px}h2{font-size:1.55rem;line-height:1.3;margin-top:32px}h3{font-size:1.15rem;margin-top:24px}p,li{color:#34445b}li{margin:7px 0}.callout{padding:16px 20px;background:var(--pale);border-left:4px solid #7e9bc9;border-radius:5px;margin:22px 0}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:18px 0}th,td{padding:11px 13px;border:1px solid var(--line);text-align:left}th{background:var(--pale)}.cta{padding:22px;background:#f4f7fc;border-radius:10px;margin-top:28px}.footer{background:#172844;color:#e8eef8;padding:24px 0}.footer a{color:#fff}.footer p{color:#c3cee0;font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="header"><div class="wrap"><a class="brand" href="../index.html">Workday Learning Hub</a> · <a href="index.html">All blogs</a></div></header>
+<section class="hero"><div class="wrap"><p class="tag">Workday Finance · Budget Analysis</p><h1>Workday Finance: How to Analyze Budget vs. Actual Variances and Identify Overspending</h1><p class="intro">A budget report can show that a department spent more than planned, but the number alone does not explain what happened. Finance analysts need to compare the figures, identify the driver and determine whether the difference needs follow-up.</p></div></section>
+<main class="wrap">
+<p>Budget vs. actual analysis is a useful finance activity for understanding how spending and income compare with an approved plan. In a Workday Finance learning scenario, the goal is not simply to locate a variance. It is to investigate the underlying business activity and communicate what the difference means.</p>
+<p>This guide uses fictional figures and a general reporting workflow. Report names, security access, planning data and available functionality vary by organization and configuration.</p>
+
+<h2>1. What does budget vs. actual analysis mean?</h2>
+<p>Budget vs. actual analysis compares planned financial amounts with recorded results for a defined period, department, cost centre, account or other reporting dimension.</p>
+<ul><li><strong>Budget:</strong> the approved or planned amount for the selected period.</li><li><strong>Actual:</strong> the financial activity recorded for the same period and scope.</li><li><strong>Variance:</strong> the difference between actual and budget.</li><li><strong>Variance percentage:</strong> the difference expressed relative to the budget, where that calculation is meaningful.</li></ul>
+<div class="callout"><strong>Basic calculation:</strong><br>Variance = Actual − Budget<br>Variance % = (Actual − Budget) ÷ Budget × 100<br><small>If budget is zero, percentage variance is undefined; report the amount and investigate separately.</small></div>
+<p>For expenses, an actual amount above budget is commonly treated as an unfavorable variance, while spending below budget may be favorable. For revenue, interpretation can be reversed. Always confirm the organization’s reporting convention before labelling a result.</p>
+
+<h2>2. A simple fictional department example</h2>
+<p>Imagine a department reviewing its monthly travel expense. These figures are illustrative only.</p>
+<div class="table-wrap"><table><thead><tr><th>Expense category</th><th>Budget</th><th>Actual</th><th>Variance</th><th>Variance %</th></tr></thead><tbody><tr><td>Travel</td><td>₹1,00,000</td><td>₹1,25,000</td><td>₹25,000 over</td><td>25% over</td></tr><tr><td>Training</td><td>₹80,000</td><td>₹72,000</td><td>₹8,000 under</td><td>10% under</td></tr><tr><td>Office supplies</td><td>₹40,000</td><td>₹44,000</td><td>₹4,000 over</td><td>10% over</td></tr></tbody></table></div>
+<p>The travel line is the largest over-budget amount in this example. That makes it a sensible starting point for review, but not proof of a mistake. The analyst should determine whether the additional travel was approved, expected, recorded in the correct period and assigned to the appropriate cost centre.</p>
+
+<h2>3. How to investigate a variance in a Workday Finance reporting workflow</h2>
+<p>Exact navigation and report names depend on the organization’s Workday setup. A learner can practise the reasoning with an authorized training environment or sample report data.</p>
+<ol><li><strong>Confirm the reporting scope.</strong> Check company, period, currency, department or cost centre, account and any other relevant filters.</li><li><strong>Compare like with like.</strong> Ensure budget and actual figures cover the same period, organizational unit and account grouping.</li><li><strong>Identify the largest differences.</strong> Sort or review variances by amount and percentage, while considering materiality thresholds.</li><li><strong>Drill into supporting activity where permitted.</strong> Review transaction dates, descriptions, suppliers, categories or accounting details available to your role.</li><li><strong>Check timing and classification.</strong> Ask whether an item belongs to another period, was posted to a different account, or was assigned to an incorrect dimension.</li><li><strong>Validate the explanation.</strong> Compare the evidence with approved budgets, business context and relevant finance controls.</li><li><strong>Document the finding.</strong> Record the variance, confirmed cause, owner, next action and review status without exposing confidential details.</li></ol>
+
+<h2>4. Common reasons a department may exceed budget</h2>
+<h3>Unplanned business activity</h3><p>Additional travel, urgent services, temporary staffing or a project change may increase expenses. Confirm whether the activity was approved and whether the forecast needs updating.</p>
+<h3>Timing differences</h3><p>An expense may be recorded in a different period from the one expected. Review transaction dates and accounting-period rules rather than assuming the budget itself is incorrect.</p>
+<h3>Incorrect account or cost centre</h3><p>Misclassification can make one department appear over budget while another appears under budget. Check the accounting classification and follow the organization’s correction process if an error is confirmed.</p>
+<h3>Budget assumptions no longer match reality</h3><p>Price changes, volume increases or a changed project scope can cause a genuine variance. The analyst should distinguish an operational change from a posting error.</p>
+<h3>Incomplete or mismatched reporting filters</h3><p>Different period, company, currency or dimension selections can produce misleading comparisons. Re-run or validate the report with consistent criteria before escalating.</p>
+
+<h2>5. Finance analyst review checklist</h2>
+<ul><li>Are budget and actuals for the same time period?</li><li>Are company, cost centre, account and currency selections consistent?</li><li>Is the variance material under the organization’s policy?</li><li>Is the difference caused by volume, rate, timing, classification or a changed plan?</li><li>Are supporting transactions and approvals available to the reviewer?</li><li>Has the business owner confirmed the explanation?</li><li>Does the variance require a forecast update, correction or follow-up?</li><li>Is the conclusion documented clearly and securely?</li></ul>
+<div class="callout">A variance report is a starting point for analysis—not an automatic indication of fraud, error or poor performance. Follow established approval and accounting controls before making adjustments.</div>
+
+<h2>6. Turning the analysis into a useful business explanation</h2>
+<p>A concise variance note should answer three questions: what changed, why it changed and what happens next. For example:</p>
+<p><em>“Travel expenses were ₹25,000 above the monthly plan in the sample scenario. The review identified additional project travel as the main driver. The department owner will confirm whether the forecast should be revised for the next period.”</em></p>
+<p>Keep the statement factual. Avoid saying an expense was unauthorized or incorrectly posted unless the review evidence supports that conclusion.</p>
+
+<h2>7. Practice exercise for learners</h2>
+<p>Use this fictional case: a cost centre has a monthly budget of ₹2,40,000 and actual expenses of ₹2,76,000.</p><ol><li>Calculate the amount and percentage variance.</li><li>List three possible reasons for the difference.</li><li>Identify two report filters you would validate before investigating transactions.</li><li>Write a two-sentence variance explanation and suggest one follow-up action.</li></ol>
+<p>Try to separate facts from assumptions. A strong analyst can explain what the report shows, what still needs validation and which stakeholder should provide the next piece of evidence.</p>
+
+<h2>8. Why this skill matters in Workday Finance learning</h2>
+<p>Budget analysis brings together financial reporting, account interpretation, organizational dimensions, transaction review and communication. Practising the workflow helps learners understand how finance teams move from a report result to a supported business explanation.</p>
+<div class="cta"><h2>Build your Workday Finance knowledge</h2><p>Explore finance processes, accounting concepts, reporting and practical learning topics through <a href="https://www.techpratham.com/courses/workday-finance-training-certification-online">Workday Finance Training</a>.</p><p>Use fictional data for practice and follow the access, privacy and approval rules of any real Workday environment.</p></div>
+<p><a href="index.html">← Browse all Workday learning guides</a> · <a href="../index.html">Workday Learning Hub home</a></p>
+</main>
+<footer class="footer"><div class="wrap"><strong>Workday Learning Hub</strong><p>Independent educational resource. Workday is a trademark of its respective owner. This website is not affiliated with or endorsed by Workday.</p></div></footer>
+</body>
+</html>
