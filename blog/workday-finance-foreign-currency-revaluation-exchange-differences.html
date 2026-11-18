@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workday Finance Foreign Currency Revaluation: Exchange Rate Differences</title>
+<meta name="description" content="Understand foreign currency revaluation in Workday Finance, including exchange rate changes, realized and unrealized gains or losses, and period-end review checks.">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="Workday Learning Hub">
+<meta property="og:type" content="article"><meta property="og:title" content="Workday Finance Foreign Currency Revaluation: Understanding Exchange Rate Differences"><meta property="og:description" content="A practical guide to reviewing foreign currency balances and exchange rate differences in Workday Finance."><meta property="og:url" content="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-foreign-currency-revaluation-exchange-differences.html">
+<link rel="canonical" href="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-foreign-currency-revaluation-exchange-differences.html">
+<style>
+:root{--ink:#182b49;--muted:#5e6d82;--blue:#2859a8;--line:#e0e7f0;--pale:#f3f6fb}*{box-sizing:border-box}body{margin:0;color:var(--ink);font:17px/1.8 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{width:min(850px,92%);margin:auto}.header{border-bottom:1px solid var(--line);padding:17px 0}.nav{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.nav a{color:var(--blue);text-decoration:none;font-weight:650}.hero{padding:48px 0 32px;background:linear-gradient(130deg,#f2f6fd,#fff)}.tag{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.2;letter-spacing:-.03em;margin:10px 0}.muted{color:var(--muted)}main{padding:30px 0 55px}h2{font-size:1.55rem;line-height:1.35;margin:34px 0 10px}h3{font-size:1.15rem;margin:24px 0 6px}p,li{color:#34445b}li{margin:7px 0}.note{padding:16px 18px;background:var(--pale);border-left:4px solid #7e9bc9;border-radius:5px;margin:22px 0}.cta{padding:22px;background:var(--pale);border-radius:10px;margin:30px 0}.cta a{font-weight:750;color:var(--blue)}table{width:100%;border-collapse:collapse;margin:18px 0}th,td{text-align:left;padding:11px;border:1px solid var(--line)}th{background:var(--pale)}.footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.9rem}
+</style></head><body>
+<header class="header"><div class="wrap nav"><a href="../index.html">Workday Learning Hub</a><nav><a href="index.html">All Blogs</a> · <a href="../index.html#courses">Workday courses</a></nav></div></header>
+<section class="hero"><div class="wrap"><p class="tag">Workday Finance · Foreign Currency</p><h1>Workday Finance Foreign Currency Revaluation: Understanding Exchange Rate Differences</h1><p class="muted">A practical guide to understanding currency movements, balance revaluation and period-end finance checks.</p></div></section>
+<main class="wrap">
+<p>Businesses that work with overseas suppliers or customers often record transactions in more than one currency. An invoice may be entered in euros or US dollars while the organisation reports its financial results in its functional or base currency. If the exchange rate changes between the original transaction and settlement, the value in the reporting currency can change too.</p>
+<p>This is where foreign currency revaluation and exchange differences become important. In a Workday Financial Management environment, the exact process depends on the organisation’s accounting design, currency setup, rate sources and close procedures. The key learning objective is to understand why a balance changes in the base currency and how finance teams review the resulting accounting impact.</p>
+<h2>What is foreign currency revaluation?</h2>
+<p>Foreign currency revaluation is the process of updating the base-currency value of eligible foreign-currency balances using an applicable exchange rate for a specified date. It is commonly relevant to open monetary items, such as unpaid supplier invoices and outstanding customer receivables, where the foreign-currency amount remains due but its equivalent value in the reporting currency has changed.</p>
+<p>Revaluation does not mean that the original foreign-currency invoice amount has changed. It changes the translated value used for accounting and reporting. Organisations define which balances are eligible, which rates apply and how adjustments are posted through their approved accounting policies and system configuration.</p>
+<h2>Realized and unrealized exchange differences</h2>
+<p>An <strong>unrealized exchange gain or loss</strong> generally arises when an open foreign-currency balance is remeasured at a reporting date before it is settled. The amount is still outstanding, but the base-currency equivalent has moved because the exchange rate changed.</p>
+<p>A <strong>realized exchange gain or loss</strong> generally arises when the foreign-currency transaction is settled and the exchange rate used at settlement differs from the rate used when the transaction was initially recognised. The final treatment depends on the organisation’s accounting policy and applicable standards.</p>
+<h2>Simple example: an unpaid supplier invoice</h2>
+<p>Assume a company records a supplier invoice for USD 1,000 when the exchange rate is ₹82 per US dollar. The initial base-currency value is ₹82,000. At a later reporting date, the applicable rate is ₹84.</p>
+<table><thead><tr><th>Calculation</th><th>Value</th></tr></thead><tbody>
+<tr><td>Original invoice</td><td>USD 1,000</td></tr>
+<tr><td>Initial exchange rate</td><td>₹82</td></tr>
+<tr><td>Initial base-currency value</td><td>₹82,000</td></tr>
+<tr><td>Reporting-date exchange rate</td><td>₹84</td></tr>
+<tr><td>Revalued base-currency value</td><td>₹84,000</td></tr>
+<tr><td>Illustrative difference</td><td>₹2,000</td></tr>
+</tbody></table>
+<p>The foreign-currency liability remains USD 1,000, but its base-currency equivalent is now ₹84,000. The ₹2,000 difference illustrates the change that may need to be recognised under the organisation’s revaluation policy. This simplified example excludes other accounting factors, rate conventions and rounding rules.</p>
+<h2>What should finance teams review?</h2>
+<ul>
+<li><strong>Currency details:</strong> confirm the transaction currency, company or ledger currency, and the relevant reporting currency.</li>
+<li><strong>Rate source and date:</strong> check that the intended rate type and effective date are being used for the accounting purpose.</li>
+<li><strong>Open balance:</strong> confirm that the item is still outstanding and that its foreign-currency amount is accurate.</li>
+<li><strong>Eligible accounts:</strong> verify that the balance belongs to an account and transaction category included in the organisation’s revaluation policy.</li>
+<li><strong>Accounting output:</strong> review the resulting adjustment, posting date and relevant gain or loss account according to approved procedures.</li>
+<li><strong>Reversal or settlement treatment:</strong> understand how the organisation handles subsequent settlement and any related accounting entries.</li>
+</ul>
+<h2>Common causes of unexpected exchange differences</h2>
+<p>Differences may arise when a rate is missing or incorrect, an unintended rate date is selected, a transaction is assigned to the wrong currency, or an item is included in a review when it should not be. A balance may also appear unexpected if a payment, credit memo or adjustment has not been considered in the review population. Where data comes from an upstream system, confirm that currency codes, amounts and dates were mapped correctly.</p>
+<p>Do not change an exchange rate or accounting setup simply to force a balance to match a spreadsheet. First identify the source of the difference, compare it with approved rate information and involve the responsible finance or configuration team where a correction is required.</p>
+<h2>A practical period-end review exercise</h2>
+<p>For learning purposes, prepare three fictional open items: a USD supplier invoice, a EUR customer receivable and a foreign-currency balance that has already been settled. Record each original amount, initial rate, reporting-date rate and translated value. Then identify which items may be candidates for revaluation under a sample accounting policy and explain why the settled item may require a different review.</p>
+<p>Document the rate source, effective date, calculation and expected accounting impact. This exercise helps connect foreign currency concepts with accounts payable, accounts receivable, general ledger review and period-end close activities. Use sample data only, not confidential supplier or customer records.</p>
+<h2>How this connects with wider Workday Finance learning</h2>
+<p>Foreign currency topics bring together transaction processing, accounting rules, ledger balances and financial close controls. Learners benefit from understanding both the business explanation and the data behind a translated balance. A structured <a href="https://www.techpratham.com/courses/workday-finance-training-certification-online">workday finance course</a> can help build broader knowledge of financial workflows and practical transaction scenarios.</p>
+<h2>Final thoughts</h2>
+<p>Foreign currency revaluation helps organisations present eligible foreign-currency balances using relevant reporting-date exchange rates. To investigate an unexpected difference, confirm the currency, rate source, effective date, open balance and accounting treatment before escalating or correcting anything. A clear review trail makes the process easier to explain and supports more reliable period-end reporting.</p>
+</main>
+<footer class="footer"><div class="wrap">Workday Learning Hub · Independent educational resource. Workday is a trademark of its respective owner. Confirm configuration-specific and accounting requirements with current official documentation and your organisation’s authorised finance team.</div></footer>
+</body></html>
