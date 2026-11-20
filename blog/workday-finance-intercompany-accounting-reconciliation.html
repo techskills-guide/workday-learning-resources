@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workday Finance Intercompany Accounting: How to Track and Reconcile Related-Company Transactions</title>
+<meta name="description" content="Understand Workday Finance intercompany accounting, including related-company transactions, due-to and due-from balances, settlement checks and consolidation eliminations.">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="Workday Learning Hub">
+<meta property="og:type" content="article"><meta property="og:title" content="Workday Finance Intercompany Accounting: How to Track and Reconcile Related-Company Transactions"><meta property="og:description" content="A practical guide to related-company transactions, intercompany balances, settlement and consolidation review in Workday Finance."><meta property="og:url" content="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-intercompany-accounting-reconciliation.html">
+<link rel="canonical" href="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-intercompany-accounting-reconciliation.html">
+<style>
+:root{--ink:#182b49;--muted:#5e6d82;--blue:#2859a8;--line:#e0e7f0;--pale:#f3f6fb}*{box-sizing:border-box}body{margin:0;color:var(--ink);font:17px/1.8 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{width:min(850px,92%);margin:auto}.header{border-bottom:1px solid var(--line);padding:17px 0}.nav{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.nav a{color:var(--blue);text-decoration:none;font-weight:650}.hero{padding:48px 0 32px;background:linear-gradient(130deg,#f2f6fd,#fff)}.tag{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.2;letter-spacing:-.03em;margin:10px 0}.muted{color:var(--muted)}main{padding:30px 0 55px}h2{font-size:1.55rem;line-height:1.35;margin:34px 0 10px}h3{font-size:1.15rem;margin:24px 0 6px}p,li{color:#34445b}li{margin:7px 0}.note{padding:16px 18px;background:var(--pale);border-left:4px solid #7e9bc9;border-radius:5px;margin:22px 0}.footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.9rem}table{width:100%;border-collapse:collapse;margin:18px 0}th,td{text-align:left;padding:11px;border:1px solid var(--line)}th{background:var(--pale)}
+</style></head><body>
+<header class="header"><div class="wrap nav"><a href="../index.html">Workday Learning Hub</a><nav><a href="index.html">All Blogs</a> · <a href="../index.html#courses">Workday courses</a></nav></div></header>
+<section class="hero"><div class="wrap"><p class="tag">Workday Finance · Intercompany Accounting</p><h1>Workday Finance Intercompany Accounting: How to Track and Reconcile Related-Company Transactions</h1><p class="muted">A practical guide to understanding transactions between related companies and reviewing the balances behind consolidated finance reports.</p></div></section>
+<main class="wrap">
+<p>Large organisations may operate through several legal entities. One company can provide a service, pay an expense or transfer funds on behalf of another company in the same group. Although the activity happens within one corporate group, each legal entity may need to record its own side of the transaction. This is why intercompany accounting matters.</p>
+<p>In Workday Financial Management, intercompany functionality supports business events between related companies, including tracking amounts due between them, settlement and receipt recording. The exact process depends on company relationships, account posting rules, security, transaction type and the organisation’s configuration. This guide explains the concepts learners should understand before investigating an intercompany balance.</p>
+<h2>What is an intercompany transaction?</h2>
+<p>An intercompany transaction occurs when related companies transact with one another or when one company acts on behalf of another. For example, a central services company may pay a software invoice that belongs to a regional subsidiary. The paying company and the company receiving the benefit need a clear record of the amount due between them.</p>
+<p>Intercompany accounting helps maintain entity-level records while making it possible to review activity across the wider group. It is different from an ordinary transaction with an external supplier or customer because the other party is a related company within the group.</p>
+<h2>Direct and on-behalf-of transactions</h2>
+<p>Two useful concepts to distinguish are direct intercompany transactions and on-behalf-of transactions. In a direct transaction, related companies exchange supplier and customer invoices. In an on-behalf-of scenario, one company records an event that involves another company, allowing the system to track which entity owes or is owed an amount.</p>
+<p>Workday documentation describes the use of a Company Intercompany Profile to define relationships between companies and account posting rules to determine the intercompany receivable and payable accounts. Do not assume that every organisation enables every transaction type or follows an identical settlement process.</p>
+<h2>How due-to and due-from balances work</h2>
+<p>Suppose Company A pays ₹30,000 for a shared service that belongs to Company B. In a simplified learning example, Company A may record an amount recoverable from Company B, while Company B records the corresponding amount payable to Company A. The intercompany affiliate identifies the related company associated with the balance.</p>
+<table><thead><tr><th>Entity</th><th>Illustrative record</th><th>Amount</th></tr></thead><tbody>
+<tr><td>Company A</td><td>Due from Company B (receivable)</td><td>₹30,000</td></tr>
+<tr><td>Company B</td><td>Due to Company A (payable)</td><td>₹30,000</td></tr>
+</tbody></table>
+<p>The example is conceptual, not a universal journal template. Actual debit and credit lines depend on the transaction, accounting rules and configured process. The important control is that both entities can explain the relationship and investigate differences between their records.</p>
+<h2>What should learners check when balances do not match?</h2>
+<ul>
+<li><strong>Company relationship:</strong> confirm that the relevant companies are configured to transact or settle with one another.</li>
+<li><strong>Affiliate information:</strong> check that the correct related company is assigned to the transaction or journal line.</li>
+<li><strong>Account posting rules:</strong> understand which intercompany receivable and payable accounts are used.</li>
+<li><strong>Transaction status:</strong> confirm whether the item is initiated, approved, posted, settled or awaiting receipt recording.</li>
+<li><strong>Amount and currency:</strong> compare transaction amounts, currencies, dates and any approved adjustments on both sides.</li>
+<li><strong>Settlement evidence:</strong> check whether the payment or non-cash settlement and related receipt steps have been completed as required.</li>
+<li><strong>Reporting period:</strong> make sure both entities are being reviewed for comparable periods and accounting dates.</li>
+</ul>
+<h2>Settlement is not the same as consolidation elimination</h2>
+<p>Settlement addresses the amount owed between related companies. Consolidation elimination has a different purpose: when group financial statements are prepared, qualifying transactions between entities in the consolidation hierarchy may be removed so the group is presented as one economic enterprise.</p>
+<p>For example, if Company A records intercompany revenue and Company B records the corresponding expense, those internal amounts may need to be eliminated in consolidated reporting. Intercompany receivables and payables may also be eliminated. The rules depend on the account relationships, company hierarchy and consolidation design.</p>
+<div class="note"><strong>Important distinction:</strong> An elimination used for consolidated reporting does not mean the underlying entity-level transaction never happened. The companies still need accurate records and appropriate reconciliation.</div>
+<h2>A practical intercompany reconciliation exercise</h2>
+<p>Create a fictional example involving two group companies and three transactions: a shared-service charge, a cash settlement and a supplier invoice issued by one related company to the other. For each item, document the initiating company, receiving or affiliate company, amount, currency, transaction date, expected due-to or due-from balance and current status.</p>
+<p>Next, compare the records from both entities. Identify any item that appears on only one side, has a different amount or remains unsettled. Write down the evidence needed to resolve each difference. Finally, explain which items would require settlement and which could be relevant to consolidation elimination under a stated sample policy.</p>
+<h2>How this topic fits into Workday Finance learning</h2>
+<p>Intercompany accounting connects general ledger concepts with company structures, transaction processing, settlement, reconciliation and consolidated reporting. It is useful to learn the business reason behind each entry instead of memorising isolated task names. A structured <a href="https://www.techpratham.com/courses/workday-finance-training-certification-online">workday finance course</a> can help learners build broader understanding of finance workflows and related system concepts.</p>
+<h2>Final thoughts</h2>
+<p>Intercompany accounting helps related companies record and review transactions without losing the entity-level detail needed for accounting control. When a balance does not agree, begin with the company relationship, affiliate, account rules, transaction status and settlement evidence. Keep settlement separate from consolidation elimination, and follow the organisation’s approved accounting design for any correction.</p>
+</main>
+<footer class="footer"><div class="wrap">Workday Learning Hub · Independent educational resource. Workday is a trademark of its respective owner. Confirm configuration-specific procedures with current official documentation and your organisation’s authorised finance team.</div></footer>
+</body></html>
