@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workday Finance Customer Contracts: How Billing Schedules and Revenue Recognition Work</title><meta name="description" content="Explore how Workday Finance customer contracts connect billing schedules, milestones, invoice generation and revenue recognition, with practical review checks."><meta name="robots" content="index,follow,max-image-preview:large"><meta name="author" content="Workday Learning Hub">
+<meta property="og:type" content="article"><meta property="og:title" content="Workday Finance Customer Contracts: How Billing Schedules and Revenue Recognition Work"><meta property="og:description" content="Explore how Workday Finance customer contracts connect billing schedules, milestones, invoice generation and revenue recognition, with practical review checks."><meta property="og:url" content="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-customer-contract-billing-revenue-recognition.html">
+<link rel="canonical" href="https://techskills-guide.github.io/workday-learning-resources/blog/workday-finance-customer-contract-billing-revenue-recognition.html">
+<style>
+:root{--ink:#182b49;--muted:#5e6d82;--blue:#2859a8;--line:#e0e7f0;--pale:#f3f6fb}*{box-sizing:border-box}body{margin:0;color:var(--ink);font:17px/1.8 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{width:min(850px,92%);margin:auto}.header{border-bottom:1px solid var(--line);padding:17px 0}.nav{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.nav a{color:var(--blue);text-decoration:none;font-weight:650}.hero{padding:48px 0 32px;background:linear-gradient(130deg,#f2f6fd,#fff)}.tag{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.2;letter-spacing:-.03em;margin:10px 0}.muted{color:var(--muted)}main{padding:30px 0 55px}h2{font-size:1.55rem;line-height:1.35;margin:34px 0 10px}h3{font-size:1.15rem;margin:24px 0 6px}p,li{color:#34445b}li{margin:7px 0}.note{padding:16px 18px;background:var(--pale);border-left:4px solid #7e9bc9;border-radius:5px;margin:22px 0}.footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.9rem}a{color:var(--blue)}
+</style></head><body>
+<header class="header"><div class="wrap nav"><a href="../index.html">Workday Learning Hub</a><nav><a href="index.html">All Blogs</a> · <a href="../index.html#courses">Workday courses</a></nav></div></header>
+<section class="hero"><div class="wrap"><p class="tag">Workday Finance · Customer Contracts</p><h1>Workday Finance Customer Contracts: How Billing Schedules and Revenue Recognition Work</h1><p class="muted">Understand how a customer agreement can drive billing events and revenue schedules—and why invoice timing and revenue timing are not always the same.</p></div></section>
+<main class="wrap">
+<p>When a business signs a customer agreement, the finance team needs more than the total contract value. It must understand what is being sold, when the customer should be billed, what conditions must be met, and how revenue should be recognised. These decisions connect contract administration with accounts receivable and financial accounting.</p>
+<p>Workday Financial Management supports customer contracts that capture agreement details and use them to drive billing schedules, revenue recognition schedules, customer invoices and accounting. The exact configuration varies by tenant, contract type and accounting policy. This guide focuses on the business logic learners should be able to explain and test.</p>
+<h2>Start with the customer contract, not the invoice</h2>
+<p>A customer contract records the commercial terms that guide downstream finance activity. Depending on the organisation's setup, relevant details can include the customer, company, contract amount, effective dates, contract lines, sales items, worktags, revenue treatment and milestones. Contract lines matter because different goods, services or project arrangements may have different billing and revenue rules.</p>
+<p>For example, a consulting firm may agree to deliver a six-month implementation project for ₹12,00,000. The agreement could specify three billing milestones, while the revenue schedule follows a separate method based on the approved contract terms and accounting policy. The contract is the starting point for understanding why those schedules exist.</p>
+<h2>How a billing schedule turns contract terms into invoices</h2>
+<p>A billing schedule determines when and how contract amounts are billed. Workday documentation describes schedules built from contract terms and billing installments. When an installment is eligible, it can be used to create a customer invoice that follows the relevant review and approval process.</p>
+<p>Billing methods can vary. A defined-installment approach can specify the first and last installment amounts, with the remaining amount spread across other installments. A spread-even approach divides the amount across a chosen number of installments. A custom approach provides more direct control over individual installment values. Available options depend on the schedule type and configuration.</p>
+<h2>Milestones act as process gates</h2>
+<p>Milestones are important when billing or revenue recognition depends on an event rather than simply the passage of time. A milestone might represent a contract date, completion of a project task or the first invoice being generated. Workday's documentation explains that schedules or installments with pending milestones are not processed until the required milestone conditions are met.</p>
+<p>Consider a project agreement where the second invoice should be raised after a testing phase is signed off. If the project task is not marked complete or its actual completion date is missing, the billing event may remain unavailable. The correct investigation is to check the milestone definition and completion evidence—not to assume the invoice itself is faulty.</p>
+<h2>Billing and revenue recognition are related, but different</h2>
+<p>Billing answers: when should the customer be invoiced? Revenue recognition answers: when and how should the organisation recognise earned revenue under its accounting policy? The two schedules may be connected, but their timing does not have to be identical.</p>
+<p>Workday customer contract configuration includes revenue treatment and can support accrued or deferred approaches, depending on the contract line and setup. Revenue recognition schedules can use methods such as spread-even, number of days or percent complete, where configured and appropriate. Milestones may also control when an installment becomes eligible for recognition.</p>
+<div class="note"><strong>Key learning point:</strong> An invoice being created does not automatically prove that the same amount should be recognised as revenue in that period. Review the contract line, revenue treatment, schedule method and accounting policy together.</div>
+<h2>A simple example: fixed-fee project billing</h2>
+<p>Assume a company signs a ₹12,00,000 fixed-fee implementation contract. The agreement specifies three billing events: ₹3,00,000 at project initiation, ₹5,00,000 after user acceptance testing, and ₹4,00,000 at final handover.</p>
+<ul>
+<li><strong>Contract review:</strong> confirm customer, company, contract line, dates, total amount and approved terms.</li>
+<li><strong>Billing schedule:</strong> verify that the three installments match the agreement and have the intended dates or milestone conditions.</li>
+<li><strong>Milestone evidence:</strong> confirm that user acceptance testing and final handover are recorded as complete before the related installment is processed.</li>
+<li><strong>Invoice review:</strong> check the generated invoice amount, customer, company, line details and approval status.</li>
+<li><strong>Revenue schedule:</strong> separately verify the approved recognition method, installment dates, milestone dependencies and accounting entries.</li>
+</ul>
+<p>This is a learning scenario, not a recommended accounting treatment. The organisation's finance policy and contract design determine the actual schedule and journal outcomes.</p>
+<h2>Common issues to investigate</h2>
+<h3>Expected invoice has not been generated</h3>
+<p>Review the contract and line status, billing schedule approval, installment date, milestone completion and any schedule hold. Also check whether the relevant business process or security configuration allows the responsible role to complete the task.</p>
+<h3>Installment amount does not match the agreement</h3>
+<p>Compare the contract line amount with the billing method and installment setup. Check whether the schedule was regenerated after a contract amount change, whether an installment was manually updated, and whether the invoice reflects the latest approved terms.</p>
+<h3>Revenue schedule is not ready for processing</h3>
+<p>Confirm that the contract line uses an eligible revenue treatment, that the revenue schedule exists and is approved, and that required milestones are complete. Review schedule holds and the selected recognition method before investigating accounting results.</p>
+<h3>Invoice and recognised revenue differ</h3>
+<p>Do not automatically treat the difference as an error. Billing and recognition can follow different dates and methods. Compare the contract terms, revenue treatment, schedule installments and accounting policy, then document why the timing difference exists.</p>
+<h2>Practical checks for a Workday Finance learner</h2>
+<ul>
+<li>Explain the difference between a customer contract, billing schedule and revenue recognition schedule.</li>
+<li>Trace one contract line from approved terms to a billing installment and customer invoice.</li>
+<li>Identify which milestone controls a particular billing or recognition event.</li>
+<li>Compare invoice timing with revenue recognition timing and explain any difference.</li>
+<li>Review the status and evidence for a schedule that is on hold or not eligible for processing.</li>
+<li>Describe how contract worktags can support analysis and reconciliation at the contract level.</li>
+</ul>
+<h2>Where to build this knowledge</h2>
+<p>Customer contracts bring together accounts receivable, project billing, milestones and revenue accounting. Learners who want to understand these connections should practise tracing the full business scenario rather than memorising individual task names. A structured <a href="https://www.techpratham.com/courses/workday-finance-training-certification-online">workday finance course</a> can provide a broader foundation in financial workflows and practical system concepts.</p>
+<h2>Final takeaway</h2>
+<p>In Workday Finance, the customer contract provides the commercial context, the billing schedule controls invoice timing, milestones can act as processing gates, and the revenue recognition schedule follows its own configured method. Understanding these separate but connected elements makes it easier to investigate billing delays, installment differences and revenue timing questions without confusing one process with another.</p>
+<p class="muted">Further reading: <a href="https://doc.workday.com/admin-guide/en-us/financial-management/revenue/customer-contracts/dan1370797700631.html">Workday customer contracts</a>, <a href="https://doc.workday.com/admin-guide/en-us/financial-management/revenue/customer-contracts-billing/sel1424461652834.html">Workday billing schedules</a> and <a href="https://doc.workday.com/admin-guide/en-us/financial-management/revenue/customer-contracts-revenue-recognition/kat1371590308180.html">revenue recognition schedules</a>.</p>
+</main>
+<footer class="footer"><div class="wrap">Workday Learning Hub · Independent educational resource. Workday is a trademark of its respective owner. Configuration and accounting treatment vary by organisation; consult current official documentation and approved finance policies.</div></footer>
+</body></html>
